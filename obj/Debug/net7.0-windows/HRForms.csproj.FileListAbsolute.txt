@@ -4,7 +4,6 @@ C:\Users\Hrach\Desktop\HRForms\bin\Debug\net7.0-windows\HRForms.runtimeconfig.js
 C:\Users\Hrach\Desktop\HRForms\bin\Debug\net7.0-windows\HRForms.dll
 C:\Users\Hrach\Desktop\HRForms\bin\Debug\net7.0-windows\HRForms.pdb
 C:\Users\Hrach\Desktop\HRForms\obj\Debug\net7.0-windows\HRForms.csproj.AssemblyReference.cache
-C:\Users\Hrach\Desktop\HRForms\obj\Debug\net7.0-windows\HRForms.MainForm.resources
 C:\Users\Hrach\Desktop\HRForms\obj\Debug\net7.0-windows\HRForms.csproj.GenerateResource.cache
 C:\Users\Hrach\Desktop\HRForms\obj\Debug\net7.0-windows\HRForms.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Hrach\Desktop\HRForms\obj\Debug\net7.0-windows\HRForms.AssemblyInfoInputs.cache
@@ -15,4 +14,6 @@ C:\Users\Hrach\Desktop\HRForms\obj\Debug\net7.0-windows\refint\HRForms.dll
 C:\Users\Hrach\Desktop\HRForms\obj\Debug\net7.0-windows\HRForms.pdb
 C:\Users\Hrach\Desktop\HRForms\obj\Debug\net7.0-windows\HRForms.genruntimeconfig.cache
 C:\Users\Hrach\Desktop\HRForms\obj\Debug\net7.0-windows\ref\HRForms.dll
+C:\Users\Hrach\Desktop\HRForms\obj\Debug\net7.0-windows\HRForms.AllEmpForm.resources
 C:\Users\Hrach\Desktop\HRForms\obj\Debug\net7.0-windows\HRForms.AddForm.resources
+C:\Users\Hrach\Desktop\HRForms\obj\Debug\net7.0-windows\HRForms.MainForm.resources

@@ -36,10 +36,11 @@
             this.txtLastNameValue = new System.Windows.Forms.TextBox();
             this.txtLastNameName = new System.Windows.Forms.TextBox();
             this.txtDeparmentName = new System.Windows.Forms.TextBox();
-            this.ddDepartmentValue = new System.Windows.Forms.ComboBox();
+            this.txtDepartmentValue = new System.Windows.Forms.TextBox();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnGoToMain = new System.Windows.Forms.Button();
+            this.btnAll = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtAddTitle
@@ -47,15 +48,15 @@
             this.txtAddTitle.Location = new System.Drawing.Point(12, 12);
             this.txtAddTitle.Name = "txtAddTitle";
             this.txtAddTitle.ReadOnly = true;
-            this.txtAddTitle.Size = new System.Drawing.Size(219, 23);
+            this.txtAddTitle.Size = new System.Drawing.Size(167, 23);
             this.txtAddTitle.TabIndex = 0;
-            this.txtAddTitle.Text = "Նոր աշխատողի գրանցում ծրագրում";
+            this.txtAddTitle.Text = "Նոր աշխատողի գրանցում";
             // 
             // txtIDValue
             // 
             this.txtIDValue.Location = new System.Drawing.Point(144, 57);
             this.txtIDValue.Name = "txtIDValue";
-            this.txtIDValue.Size = new System.Drawing.Size(205, 23);
+            this.txtIDValue.Size = new System.Drawing.Size(219, 23);
             this.txtIDValue.TabIndex = 1;
             // 
             // txtIDName
@@ -71,7 +72,7 @@
             // 
             this.txtFirsNameValue.Location = new System.Drawing.Point(144, 98);
             this.txtFirsNameValue.Name = "txtFirsNameValue";
-            this.txtFirsNameValue.Size = new System.Drawing.Size(205, 23);
+            this.txtFirsNameValue.Size = new System.Drawing.Size(219, 23);
             this.txtFirsNameValue.TabIndex = 1;
             // 
             // txtFirstNameName
@@ -87,7 +88,7 @@
             // 
             this.txtLastNameValue.Location = new System.Drawing.Point(144, 142);
             this.txtLastNameValue.Name = "txtLastNameValue";
-            this.txtLastNameValue.Size = new System.Drawing.Size(205, 23);
+            this.txtLastNameValue.Size = new System.Drawing.Size(219, 23);
             this.txtLastNameValue.TabIndex = 1;
             // 
             // txtLastNameName
@@ -106,52 +107,65 @@
             this.txtDeparmentName.ReadOnly = true;
             this.txtDeparmentName.Size = new System.Drawing.Size(116, 23);
             this.txtDeparmentName.TabIndex = 2;
-            this.txtDeparmentName.Text = "Ստորաբաժանում";
+            this.txtDeparmentName.Text = "Բաժին";
             // 
-            // ddDepartmentValue
+            // txtDepartmentValue
             // 
-            this.ddDepartmentValue.FormattingEnabled = true;
-            this.ddDepartmentValue.Location = new System.Drawing.Point(144, 185);
-            this.ddDepartmentValue.Name = "ddDepartmentValue";
-            this.ddDepartmentValue.Size = new System.Drawing.Size(205, 23);
-            this.ddDepartmentValue.TabIndex = 3;
+            this.txtDepartmentValue.Location = new System.Drawing.Point(144, 185);
+            this.txtDepartmentValue.Name = "txtDepartmentValue";
+            this.txtDepartmentValue.Size = new System.Drawing.Size(219, 23);
+            this.txtDepartmentValue.TabIndex = 3;
             // 
             // btnAdd
             // 
             this.btnAdd.Location = new System.Drawing.Point(12, 230);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(86, 23);
+            this.btnAdd.Size = new System.Drawing.Size(80, 23);
             this.btnAdd.TabIndex = 4;
             this.btnAdd.Text = "Ավելացնել";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(104, 230);
+            this.btnCancel.Location = new System.Drawing.Point(98, 230);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 5;
             this.btnCancel.Text = "Չեղարկել";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnGoToMain
             // 
-            this.btnGoToMain.Location = new System.Drawing.Point(185, 230);
+            this.btnGoToMain.Location = new System.Drawing.Point(84, 259);
             this.btnGoToMain.Name = "btnGoToMain";
             this.btnGoToMain.Size = new System.Drawing.Size(109, 23);
             this.btnGoToMain.TabIndex = 5;
             this.btnGoToMain.Text = "Գլխավոր մենյու";
             this.btnGoToMain.UseVisualStyleBackColor = true;
+            this.btnGoToMain.Click += new System.EventHandler(this.btnGoToMain_Click);
+            // 
+            // btnAll
+            // 
+            this.btnAll.Location = new System.Drawing.Point(179, 230);
+            this.btnAll.Name = "btnAll";
+            this.btnAll.Size = new System.Drawing.Size(100, 23);
+            this.btnAll.TabIndex = 5;
+            this.btnAll.Text = "Դիտել բոլորը";
+            this.btnAll.UseVisualStyleBackColor = true;
+            this.btnAll.Click += new System.EventHandler(this.btnAll_Click);
             // 
             // AddForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(489, 285);
+            this.ClientSize = new System.Drawing.Size(572, 318);
+            this.Controls.Add(this.btnAll);
             this.Controls.Add(this.btnGoToMain);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.ddDepartmentValue);
+            this.Controls.Add(this.txtDepartmentValue);
             this.Controls.Add(this.txtDeparmentName);
             this.Controls.Add(this.txtLastNameName);
             this.Controls.Add(this.txtFirstNameName);
@@ -177,9 +191,10 @@
         private TextBox txtLastNameValue;
         private TextBox txtLastNameName;
         private TextBox txtDeparmentName;
-        private ComboBox ddDepartmentValue;
+        private TextBox txtDepartmentValue;
         private Button btnAdd;
         private Button btnCancel;
         private Button btnGoToMain;
+        private Button btnAll;
     }
 }
