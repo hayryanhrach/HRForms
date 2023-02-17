@@ -18,20 +18,22 @@ namespace HRForms
         }
 
         private void btbAdd_Click(object sender, EventArgs e)
-        {    
+        {
+            this.Hide();
             AddForm addForm=new AddForm();
             addForm.Show();
         }
 
         private void btnAll_Click(object sender, EventArgs e)
         {
+            this.Hide();
             AllEmpForm allEmpForm = new AllEmpForm();
             allEmpForm.Show();
         }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            this.Close();
+           Application.Exit();
         }
     }
 }

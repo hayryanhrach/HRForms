@@ -17,3 +17,4 @@ C:\Users\Hrach\Desktop\HRForms\obj\Debug\net7.0-windows\ref\HRForms.dll
 C:\Users\Hrach\Desktop\HRForms\obj\Debug\net7.0-windows\HRForms.AllEmpForm.resources
 C:\Users\Hrach\Desktop\HRForms\obj\Debug\net7.0-windows\HRForms.AddForm.resources
 C:\Users\Hrach\Desktop\HRForms\obj\Debug\net7.0-windows\HRForms.MainForm.resources
+C:\Users\Hrach\Desktop\HRForms\obj\Debug\net7.0-windows\HRForms.Properties.Resources.resources

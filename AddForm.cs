@@ -54,6 +54,8 @@ namespace HRForms
         private void btnGoToMain_Click(object sender, EventArgs e)
         {
             this.Close();
+            MainForm mainForm =new MainForm();
+            mainForm.Show();
         }
 
         private void btnAll_Click(object sender, EventArgs e)
